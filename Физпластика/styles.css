@@ -321,7 +321,7 @@ h2 {
 #cookieConsent button {
     background-color: #ebd0c6;
     width: 50%;
-    height: auto;
+    height: 10%;
     line-height: 11%;
     color: #fff;
     border: 0;
@@ -331,7 +331,7 @@ h2 {
     cursor: pointer;
     display: inline-block;
     margin: 0% auto;
-    padding: 1%;
+    padding: 2%;
 }
 #cookieConsent button.active{
     background: #766357 !important;
@@ -347,7 +347,7 @@ h2 {
 
 .arrival input {
     width: 100%;
-    height: auto;
+    height: 12%;
     text-align: center;
     color: #1b7918;
     border: none;
