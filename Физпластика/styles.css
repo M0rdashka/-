@@ -215,9 +215,6 @@ h2 {
     text-align: 25px;
     color: #ffffff;
 }
-.geo_position {
-    margin: 0 0 10% 0;
-}
   .form_client,.form_client>input {
     display: inline-block;
     vertical-align: baseline;
@@ -226,7 +223,6 @@ h2 {
     text-align: center;
     position: relative;
     display:block;
-    margin-top: -15%;
     height: auto;
     width: 100%;
 }
@@ -278,17 +274,17 @@ h2 {
 }
 
 .modal_content {
-    margin: 0%;
+    margin-top: 0%;
     width: 100%;
     height: auto;
-    padding: 0% 0% 0% 0%;
-    display: none;
+    padding: 5% 0% 0% 0%;
+    display: block;
     position: fixed;
-    top: 0%;
-    background: #fff;
-    -webkit-box-shadow: 0 30px 40px rgba(0,0,0,.2);
-       -moz-box-shadow: 0 30px 40px rgba(0,0,0,.2);
-            box-shadow: 0 30px 40px rgba(0,0,0,.2);
+    background-color: #ffffff;
+    top: -48%;
+    -webkit-box-shadow: 0 30px 40px rgba(0,0,0,.3);
+       -moz-box-shadow: 0 30px 40px rgba(0,0,0,.3);
+            box-shadow: 0 30px 40px rgba(0,0,0,.3);
 }
 
 .modal_content span:hover,h1 {
@@ -298,7 +294,6 @@ h2 {
     width: 100%;
     height: auto;
     text-align: center;
-    color: #1b7918;
     border: none;
     outline: none;
     position: fixed;
@@ -306,8 +301,8 @@ h2 {
     padding-top: 0%;
     margin-bottom: 0%;
     margin-top: 0%;
-    padding-top: -1%;
-    padding-bottom: 5%;
+    padding-top:0%;
+    padding-bottom: 0%;
     cursor: pointer;
     background-color: #ffffff;
 }
@@ -316,12 +311,13 @@ h2 {
     text-align: center;
     display: block;
     position: relative;
-    margin-bottom: 8%;
+    margin-bottom: 0%;
+    padding-bottom: 5%;
 }    
 #cookieConsent button {
     background-color: #ebd0c6;
-    width: 50%;
-    height: 10%;
+    width: 40%;
+    height: 15%;
     line-height: 11%;
     color: #fff;
     border: 0;
@@ -330,7 +326,7 @@ h2 {
     font-size: 19px;
     cursor: pointer;
     display: inline-block;
-    margin: 0% auto;
+    margin: 0% auto 10%;
     padding: 2%;
 }
 #cookieConsent button.active{
@@ -347,27 +343,25 @@ h2 {
 
 .arrival input {
     width: 100%;
-    height: 12%;
+    height: auto;
     text-align: center;
-    color: #1b7918;
     border: none;
     outline: none;
     position: absolute;
     display: block;
     padding-top: 5%;
-    margin-bottom: 0%;
+    margin-bottom: 3%;
     cursor: pointer;
 }
 .departure input {
     width: 100%;
     height: auto;
     text-align: center;
-    color: #1b7918;
     border: none;
     outline: none;
     position: absolute;
-    margin-top: 1%;
-    margin-bottom: 4%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     cursor: pointer;
     display: block;
 }
@@ -387,8 +381,8 @@ h2 {
     font-size: 19px;
     cursor: pointer;
     display: block;
-    margin-bottom: 0%;
-    margin-top: 21%;
+    margin-bottom: 20%;
+    margin-top: 0%;
 }
 .form_client button.active{
     background: #766357 !important;
@@ -416,13 +410,6 @@ table {
     position: relative;
     text-align: center;
     font-size: 18px #ffffff !important;
-}
-.information_price {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    clear: both;
 }
 @-webkit-keyframes lite {
     0% {
@@ -527,10 +514,58 @@ table {
 .modal_content a:active,.square:active {
     background: #cfa899;
 }
+.carousel-item {
+    display: flex; /* Позволяет располагать слайды в ряд */
+    text-align: center;
+    margin-left: 17%;
+    color: #fff;
+}
+
+.productCard {
+    color: #fff;
+    background-color: #ebd0c6; /* Полупрозрачный фон */
+    border-radius: 0; /* Радиус для скругления углов */
+    padding: 3%; /* Отступы внутри карточки */
+    box-shadow: 0 1% 1% rgba(3, 0, 0, 0.5); /* Тень для карточки */
+    text-align: center; /* Выравнивание текста по центру */
+    margin: 0 1% 10%; /* Отступы для карточек */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон для стрелок */
+    border-radius: 50%; /* Скругление стрелок */
+    width: 40px; /* Ширина стрелок */
+    height: 40px; /* Высота стрелок */
+    margin: 10% 1%; /* Отступы для стрелок */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Фон иконок стрелок */
+    border-radius: 50%; /* Скругление иконок стрелок */
+}
+.card {
+    border: none; /* Убираем border */
+    background: transparent; /* Убираем фон */
+}
+
+.card-title {
+    color: white; /* Цвет заголовка на белый */
+}
+
+.card-text {
+    color: white; /* Цвет текста на белый */
+    margin-bottom: 15%; /* Добавляем отступ снизу */
+}
+
+.img-fluid {
+    border-radius: 0; /* Убираем скругление у изображения */
+}
 footer {
     height: 125px;
     width: 100%;
-    background-color: rgb(164, 212, 169);
+    background-color: rgb(116, 209, 126);
     z-index: 5000;
     position: fixed;
     bottom: 0;
@@ -642,8 +677,23 @@ footer {
         width: 100%;
         height: auto;
     }
-
+    .modal_content {
+        margin-top: 0%;
+        width: 100%;
+        height: auto;
+        padding: 6% 0% 0% 0%;
+        display: block;
+        position: fixed;
+        background-color: #ffffff;
+        top: 10%;
+        -webkit-box-shadow: 0 30px 40px rgba(0,0,0,.3);
+           -moz-box-shadow: 0 30px 40px rgba(0,0,0,.3);
+                box-shadow: 0 30px 40px rgba(0,0,0,.3);
+    }
+    
     .features {
+        display:grid;
+        position: static;
         width: 100%;
         height: auto;
         margin: 0% 0% 0% 0%;
@@ -652,17 +702,11 @@ footer {
         display: block;
         width: 100%;
         height: auto;
-        position: relative;
+        position: flex;
         text-align: center;
         margin-bottom: 0%;
     }
-    .feature_first img {
-        margin-top: -50%;
-        margin-left: 33%;
-        padding-top: 0%;
-        position: absolute;
-
-    }
+    
     .attraction_2 {
         display: block;
         width: 100%;
@@ -702,10 +746,39 @@ footer {
         padding-left: 15px;
         padding-right: 15px;
     }
-  
+    .form_client button {
+        background-color: #ebd0c6;
+        width: 100%;
+        height: auto;
+        line-height: 86px;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        text-transform: uppercase;
+        font-size: 19px;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 0%;
+        margin-top: 10%;
+    }
+    #cookieConsent button {
+        background-color: #ebd0c6;
+        width: 40%;
+        height: 15%;
+        line-height: 11%;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        text-transform: uppercase;
+        font-size: 19px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0% auto 30%;
+        padding: 5%;
+    }
   .form_client {
     width: 100%;
-    height: 200px;
+    height: auto;
     display: block;
     position: relative;
     text-align: center;
@@ -744,7 +817,7 @@ footer {
     position: relative;
     text-align: center;
     margin-top: 12% !important;
-    margin-bottom: 0%;
+    margin-bottom: 5%;
   }
   footer {
     height: 120px !important;
@@ -850,10 +923,6 @@ footer {
           text-align: center;
           margin-bottom: 10%;
       }
-      .feature_first {
-          margin-top: -10%;
-          padding-top: 0%;
-      }
       .attraction_2 {
           display: block;
           width: 100%;
@@ -932,7 +1001,7 @@ footer {
       position: relative;
       text-align: center;
       margin-top: 12% !important;
-      margin-bottom: 0%;
+      margin-bottom: 5%;
     }
     footer {
       height: 130px;
