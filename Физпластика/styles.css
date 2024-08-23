@@ -528,7 +528,7 @@ table {
     padding: 3%; /* Отступы внутри карточки */
     box-shadow: 0 1% 1% rgba(3, 0, 0, 0.5); /* Тень для карточки */
     text-align: center; /* Выравнивание текста по центру */
-    margin: 0 1% 10%; /* Отступы для карточек */
+    margin: 0 1% 1%; /* Отступы для карточек */
 }
 
 .carousel-control-prev,
@@ -566,7 +566,7 @@ main {
     margin-bottom: 5%;
 }
 footer {
-    height: 125px;
+    height: auto;
     width: 100%;
     background-color: rgb(116, 209, 126);
     z-index: 5000;
