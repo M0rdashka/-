@@ -562,6 +562,9 @@ table {
 .img-fluid {
     border-radius: 0; /* Убираем скругление у изображения */
 }
+main {
+    margin-bottom: 5%;
+}
 footer {
     height: 125px;
     width: 100%;
