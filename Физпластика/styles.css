@@ -72,54 +72,59 @@ h2 {
     font-size: 25px;
     color: #fff;
 }
-
 .attraction {
     display: block;
-    width: auto;
-    height: 500px;
-    margin-top: 0px;
-    padding: 30px;
+    width: 90%;
+    height: 25%;
+    margin-top: 0%;
+    padding: 10%;
 }
 .attraction h2 {
-    margin-top: 55px;
-    width: 142px;
-    padding-left: 128px;
+    margin-top: 10%;
+    width: 100%;
+    padding-left: 15%;
     line-height: inherit;
 }
 .attraction p {
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-top: 8px;
-    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 6%;
+    width: 100%;
 }
 .green {
-    float: left;
+    display: inline-block;
+    position: static;
     text-align: center;
-    width: auto;
-    height: 256px;
+    width: 100%;
+    height: auto;
     color: #fff;
-    margin-left: 5%;
-    float: left;
+    margin: 0% 0% 0% 0%;
 }
-.green h2 {
+.green h3 {
+    padding-top: 5%;
     text-align: center; 
-    margin-left: 5%; 
+    padding-left: 15%; 
 }  
 .green p {
     text-align: center; 
-    margin-left: 10%; 
-}    
-.green_branch {
-    float: right;
+    padding-left: 15%; 
+    padding-top: 2%;
+}  
+.green img {
+    text-align: center; 
+    padding-left: 15%;
+    display: inline-block;
+    position: relative; 
+    width: 50%;
     height: auto;
-    margin-right: 10%;
-
+}  
+.green_branch {
+    display: inline-block;
+    position: absolute;
 }
 .green_branch_2 {
-    float: left;
-    height: auto;
-    margin-left: 10%;
-    
+    display: inline-block;
+    position: absolute; 
 }
 .features {
     width: 100%;
@@ -141,35 +146,29 @@ h2 {
     padding-top: 5%;
     padding-bottom: 10%;
 }
-
 .feature_third {
     padding-top: 5%;
 }
-
 .feature_first img,.feature_second img {
     margin: 0 auto 25px;
     display: flex;
     position: static;
     display: flex;
 }
-
 .feature_third img {
     margin: 0 auto 23px;
     position: static;
     display: flex;
 }
-
 .feature_first b, .feature_second b {
     text-align: center;
     margin: 100px;
 }
-
 .feature_third b, a span {
     text-align: center;
 
     margin: 100px;
 }
-
 .feature_third b {
     text-transform: uppercase;
     font-weight: 700;
@@ -177,39 +176,40 @@ h2 {
     right: 5px;
     position: relative;
 }
-
 .feature_first p,.feature_second p,.feature_third p {
     padding: 7px 60px 0;
 }
 .attraction_2 {
-    margin: 15% auto;
-    clear: both;
-    width: auto;
-    height: 485px;
+    margin: 0% 0% 10% 0%;
+    width: 100%;
+    height: auto;
     background-color: #ebd0c6;
+    display: block;
+    position: relative;
 }
 .attraction_2 .second_attraction {
-    margin: 0 auto;
-    float: left;
-    width: auto;
-    height: 250px;
-}
-.attraction_2 .green_attraction {
-    margin-left: 40px;
-    float: left;
-    width: 30%;
+    margin: 0%;
+    display: inline-block;
+    position: relative;
+    width: 40%;
     height: auto;
 }
+.attraction_2 .green_attraction {
+    margin-left: 20%;
+    padding-top: 0%;
+    width: 35%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
 .attraction_2 h3 {
-    margin-left: 25%;
-    padding-top: 15%;
     width: auto;
     color: #ffffff;
+    margin-left: 30%;
 }
-
 .attraction_2 p {
-    padding-top: 15%;
-    padding-left: 10%;
+    padding-top: 0%;
+    
     width: 100%;
     height: auto;
     text-align: 25px;
@@ -237,14 +237,13 @@ h2 {
 }
 .form_client span {
     margin: 1% 0% 3%;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        color: #fff;
-        display: block;
-        vertical-align: middle;
-    }
-
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    display: block;
+    vertical-align: middle;
+}
 .for_modal_content {
     background-color: #ebd0c6;
     width: 100%;
@@ -260,19 +259,15 @@ h2 {
     margin-bottom: 0%;
     position: absolute;
 }
-
 .for_modal_content.active{
     background: #766357 !important;
 }
-
 .for_modal_content:hover {
     background-color: #dfbdb1;
 }
-
 .for_modal_content:active {
     background-color: #cfa899;
 }
-
 .modal_content {
     margin-top: 0%;
     width: 100%;
@@ -332,15 +327,12 @@ h2 {
 #cookieConsent button.active{
     background: #766357 !important;
 }
-
 #cookieConsent button:hover {
     background-color: #dfbdb1;
 }
-
 #cookieConsent button:active {
     background-color: #cfa899;
 }
-
 .arrival input {
     width: 100%;
     height: auto;
@@ -387,15 +379,12 @@ h2 {
 .form_client button.active{
     background: #766357 !important;
 }
-
 .form_client button:hover {
     background-color: #dfbdb1;
 }
-
 .form_client button:active {
     background-color: #cfa899;
 }
-
 .modal_content_show {
     display: block;
     -webkit-animation: lite .5s;
@@ -461,7 +450,6 @@ table {
            transform: translateX(0);
     }
 }
-
 @keyframes lite {
     0% {
         -webkit-transform: translateX(-1000px);
@@ -506,11 +494,9 @@ table {
     cursor: pointer;
     margin-top: 38px;
 }
-
 .modal_content a:hover,.square:hover {
     background: #dfbdb1;
 }
-
 .modal_content a:active,.square:active {
     background: #cfa899;
 }
@@ -520,7 +506,6 @@ table {
     margin-left: 17%;
     color: #fff;
 }
-
 .productCard {
     color: #fff;
     background-color: #ebd0c6; /* Полупрозрачный фон */
@@ -530,7 +515,6 @@ table {
     text-align: center; /* Выравнивание текста по центру */
     margin: 0 1% 1%; /* Отступы для карточек */
 }
-
 .carousel-control-prev,
 .carousel-control-next {
     background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон для стрелок */
@@ -539,7 +523,6 @@ table {
     height: 40px; /* Высота стрелок */
     margin: 10% 1%; /* Отступы для стрелок */
 }
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5); /* Фон иконок стрелок */
@@ -549,16 +532,13 @@ table {
     border: none; /* Убираем border */
     background: transparent; /* Убираем фон */
 }
-
 .card-title {
     color: white; /* Цвет заголовка на белый */
 }
-
 .card-text {
     color: white; /* Цвет текста на белый */
     margin-bottom: 15%; /* Добавляем отступ снизу */
-}
-
+} 
 .img-fluid {
     border-radius: 0; /* Убираем скругление у изображения */
 }
@@ -566,22 +546,20 @@ main {
     margin-bottom: 5%;
 }
 footer {
-    height: auto;
+    height: 15%;
     width: 100%;
-    background-color: rgb(116, 209, 126);
-    z-index: 5000;
+    background-color: rgb(164, 212, 169);
+    z-index: 15000;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     margin-top: 10%;
 }
-
 .social,.tour_place {
     float: left;
     text-align: center;
 }
-
 .tour_place {
     text-transform: uppercase;
     font-weight: 700;
@@ -593,7 +571,6 @@ footer {
     position: relative;
     margin-left: 20%;
 }
-
 .price_controls label,.social li,.tour_place p {
     display: inline-block;
     vertical-align: baseline;
@@ -646,7 +623,7 @@ footer {
     height: 150px;
     margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width:1200px) {
     body {
       width: 100% ;
       font-size: 14px;
@@ -660,16 +637,18 @@ footer {
     }
     .attraction {
         display: block;
+        position: relative;
         width: 100%;
         height: auto;
+        padding-top: 40%;
     }
     .green {
         position:relative;
     }
     .navbar img {
-          margin-left: 70%;
-          height: 70px;
-          width: auto;
+        display: block;
+        position: relative;
+        width: 100%;
   
     }
     .green_branch img, .green_branch_2 img {
@@ -695,7 +674,7 @@ footer {
     }
     
     .features {
-        display:grid;
+        display:block;
         position: static;
         width: 100%;
         height: auto;
@@ -709,45 +688,50 @@ footer {
         text-align: center;
         margin-bottom: 0%;
     }
-    
     .attraction_2 {
-        display: block;
-        width: 100%;
-        height: auto;
-        background-color: #ebd0c6;
+            display: block;
+            position: relative; 
+            width: 100%;
+            height: auto;
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+        .attraction_2 .second_attraction {
+       width: 100%;
+       height: auto; 
+       display: block;
+       position: static;
     }
-    .second_attraction img {
-        text-align: center;
+    .green_attraction {
         width: 100%;
         height: auto;
+        display: block;
+        position: absolute;
+        text-align: center;
     }
     .attraction_2 .green_attraction {
-        display: block;
-        position: relative;
-        width: 100%;
+        width: 100% !important;
         height: auto;
+        display: block;
+        position: absolute;
         text-align: center;
-        margin-left: 0%;
-        
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
     .green_attraction h3 {
-        margin-top: 5%;
-        margin-left: 0%;
-        margin-bottom: 20%;
-        padding-top: 5%;
+        margin-top: 0%;
+        margin-left: 0% !important;
+        margin-bottom: 10%;
+        padding-top: 0%;
         text-align: center;
-        padding-left: 15px;
-        padding-right: 15px;
         color: #fff;
     }
     .green_attraction p {
-        margin-top: -10%;
+        margin-top: 0%;
         margin-right: 0%;
-        text-align: center; 
         width: 100%;
         height: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 5% !important;
     }
     .form_client button {
         background-color: #ebd0c6;
@@ -879,7 +863,7 @@ footer {
     visibility: hidden; 
 }
 }
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     body {
         width: 100%;
         font-size: 14px;
@@ -927,30 +911,33 @@ footer {
           margin-bottom: 10%;
       }
       .attraction_2 {
-          display: block;
+          display: inline-block;
+          margin-bottom: 15%;
           width: 100%;
-          height: 750px;
+          height: auto;
           background-color: #ebd0c6;
       }
       .second_attraction img {
           text-align: center;
           width: 100%;
           height: auto;
-      }
-      .attraction_2 .green_attraction {
           display: block;
           position: relative;
-          width: 100%;
+      }
+      .attraction_2 .green_attraction {
+          display: inline-block;
+          position: static;
+          width: 52%;
           height: auto;
           text-align: center;
           margin-left: 0%;   
-          margin-top: 15%;
+          margin-top: 0%;
       }
       .green_attraction h3 {
           color: #fff;
-          margin-left: 0%;
-          padding-top: 10%;
-          margin-top: 10%;
+          margin-left: 10%;
+          margin-bottom: 5%;
+          margin-top: 0%;
           text-align: center;
       }
       .green_attraction p {
@@ -958,11 +945,11 @@ footer {
           text-align: center; 
           width: 100%;
           height: auto;
-          padding-top: 05%;
-          padding-left: 15px;
-          padding-right: 15px;
-         
-      }
+          padding-top: 0%;
+          margin-bottom: 0%;
+          padding-bottom: 0%;
+          padding-left: 15%;
+          padding-right: 5%;
       }
     .form_client {
       width: 100%;

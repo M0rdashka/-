@@ -38,7 +38,7 @@
   <main class="container">
     <div class="attraction">
       <div class="green_branch_2">
-        <img src="./img/ветка_2.png" width="100px" height="auto" alt="ветка">
+        <img src="./img/ветка_2.png" width="30%" height="auto" alt="ветка">
       </div>
       <div class="green">
         <h3>Дипломированный специалист</h3>
@@ -47,7 +47,7 @@
         <img src="https://faceplastic.academy/wp-content/themes/faceplastic/assets/img/logo.svg" width="470px" height="100px" alt="Логотип академии">
       </div>
       <div class="green_branch">
-        <img src="./img/ветка.png" width="100px" height="auto" alt="ветка">
+        <img src="./img/ветка.png" width="30%" height="auto" alt="ветка">
       </div>
     </div>
     <section class="features">
@@ -117,35 +117,6 @@
               </script>
                 <button type="submit" class="form_search" style="margin-top: 23%;">Отправить</button>
             </form>
-            <?php
-        } else {
-            $phone_number = filter_var(trim($_POST['phone_number']), FILTER_SANITIZE_STRING);
-            $name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
-        
-            if (!preg_match('/^[0-9\+\-\(\) ]+$/', $phone_number)) {
-                $_SESSION['error_message'] = "Неверный формат номера телефона.";
-            } elseif (!empty($phone_number) && !empty($name)) {
-                $phone_number = htmlspecialchars($phone_number);
-                $name = htmlspecialchars($name);
-        
-                $headers = "From: suppor2@md-nails.ru\r\n";
-                $headers .= "Content-type: text/plain; charset=utf-8\r\n";
-        
-                // Отправка почты
-                if (mail("admin@md-nails.ru", "Заявка с сайта", "Номер телефона: " . $phone_number . ". Имя: " . $name, $headers)) {
-                    $_SESSION['success_message'] = "Сообщение успешно отправлено.";
-                } else {
-                    $_SESSION['error_message'] = "При отправке сообщения возникли ошибки.";
-                }
-            } else {
-                $_SESSION['error_message'] = "Пожалуйста, заполните все поля.";
-            }
-        
-            // Перенаправление на ту же страницу
-            header("./index.html");
-            exit(); // Завершаем выполнение скрипта
-        }
-        ?>
 </body>
 </html>
       </div>
@@ -177,6 +148,5 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
